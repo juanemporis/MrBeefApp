@@ -11,6 +11,15 @@
 		FA7865B32BA4F0CE00D3F373 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7865B22BA4F0CE00D3F373 /* ContentView.swift */; };
 		FA7865B52BA4F0D000D3F373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7865B42BA4F0D000D3F373 /* Assets.xcassets */; };
 		FA7865B82BA4F0D000D3F373 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7865B72BA4F0D000D3F373 /* Preview Assets.xcassets */; };
+		FA7865C12BA4F6CD00D3F373 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7865C02BA4F6CD00D3F373 /* LoginView.swift */; };
+		FA7865C32BA4F6E000D3F373 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7865C22BA4F6E000D3F373 /* LogoView.swift */; };
+		FA7865C52BA4F6ED00D3F373 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7865C42BA4F6ED00D3F373 /* BackgroundView.swift */; };
+		FA7865C72BA4F6F800D3F373 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7865C62BA4F6F800D3F373 /* LabelView.swift */; };
+		FA7865C92BA4F70400D3F373 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7865C82BA4F70400D3F373 /* TextFieldView.swift */; };
+		FA7865CB2BA4F71500D3F373 /* SecureFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7865CA2BA4F71500D3F373 /* SecureFieldView.swift */; };
+		FA7865CD2BA4F72300D3F373 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7865CC2BA4F72300D3F373 /* ColorPalette.swift */; };
+		FA7865D02BA4F75900D3F373 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7865CF2BA4F75900D3F373 /* ButtonView.swift */; };
+		FA7865D22BA503BB00D3F373 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7865D12BA503BB00D3F373 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		FA7865B22BA4F0CE00D3F373 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA7865B42BA4F0D000D3F373 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA7865B72BA4F0D000D3F373 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA7865C02BA4F6CD00D3F373 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FA7865C22BA4F6E000D3F373 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		FA7865C42BA4F6ED00D3F373 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		FA7865C62BA4F6F800D3F373 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		FA7865C82BA4F70400D3F373 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		FA7865CA2BA4F71500D3F373 /* SecureFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFieldView.swift; sourceTree = "<group>"; };
+		FA7865CC2BA4F72300D3F373 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		FA7865CF2BA4F75900D3F373 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		FA7865D12BA503BB00D3F373 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +69,8 @@
 		FA7865AF2BA4F0CE00D3F373 /* MrBeefApp */ = {
 			isa = PBXGroup;
 			children = (
+				FA7865BF2BA4F6AE00D3F373 /* Components */,
+				FA7865BE2BA4F69E00D3F373 /* Views */,
 				FA7865B02BA4F0CE00D3F373 /* MrBeefAppApp.swift */,
 				FA7865B22BA4F0CE00D3F373 /* ContentView.swift */,
 				FA7865B42BA4F0D000D3F373 /* Assets.xcassets */,
@@ -65,6 +85,29 @@
 				FA7865B72BA4F0D000D3F373 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA7865BE2BA4F69E00D3F373 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA7865C02BA4F6CD00D3F373 /* LoginView.swift */,
+				FA7865D12BA503BB00D3F373 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA7865BF2BA4F6AE00D3F373 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA7865C22BA4F6E000D3F373 /* LogoView.swift */,
+				FA7865C42BA4F6ED00D3F373 /* BackgroundView.swift */,
+				FA7865C62BA4F6F800D3F373 /* LabelView.swift */,
+				FA7865C82BA4F70400D3F373 /* TextFieldView.swift */,
+				FA7865CA2BA4F71500D3F373 /* SecureFieldView.swift */,
+				FA7865CC2BA4F72300D3F373 /* ColorPalette.swift */,
+				FA7865CF2BA4F75900D3F373 /* ButtonView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +180,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7865C52BA4F6ED00D3F373 /* BackgroundView.swift in Sources */,
+				FA7865C92BA4F70400D3F373 /* TextFieldView.swift in Sources */,
+				FA7865D02BA4F75900D3F373 /* ButtonView.swift in Sources */,
+				FA7865CD2BA4F72300D3F373 /* ColorPalette.swift in Sources */,
+				FA7865C12BA4F6CD00D3F373 /* LoginView.swift in Sources */,
+				FA7865C32BA4F6E000D3F373 /* LogoView.swift in Sources */,
 				FA7865B32BA4F0CE00D3F373 /* ContentView.swift in Sources */,
+				FA7865D22BA503BB00D3F373 /* MainView.swift in Sources */,
 				FA7865B12BA4F0CE00D3F373 /* MrBeefAppApp.swift in Sources */,
+				FA7865CB2BA4F71500D3F373 /* SecureFieldView.swift in Sources */,
+				FA7865C72BA4F6F800D3F373 /* LabelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
