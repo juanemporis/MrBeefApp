@@ -8,39 +8,31 @@
 import SwiftUI
 
 struct SearchAndFilterBar: View {
+    @State private var searchText = ""
+    
     var body: some View {
         
-            HStack{
-                Image(systemName: "location.circle")
+        HStack{
+            ZStack {
+                Image(systemName: "magnifyingglass")
                     .foregroundStyle(.gray)
-                
-                VStack(alignment: .leading, spacing: 2){
-                    Text("hello")
-                        .font(.footnote)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(.gray)
+                    .padding(.leading, 15)
+            }
+            
+            TextField("Donde quieres comer hoy?", text: $searchText)
+                .padding(10)
+                .padding(.leading,5)
+                .background(Color(.systemGray6))
+                .cornerRadius(8)
+                .frame(maxWidth: 250)
+                .onTapGesture {
                     
-                    Text("Anywere - Any Week - Add guests")
-                        .font(.caption2)
-                        .foregroundStyle(.gray)
+                    searchText = ""
                 }
-                
-                Spacer()
-                
-                Button(action: {}, label: {
-                    Image(systemName: "line.3.horizontal.decrease.circle")
-                        .foregroundStyle(.gray)
-                })
-            }
-            .padding(.horizontal)
-            .padding(.vertical, 10)
-            .overlay{
-                Capsule()
-                    .stroke(Color.purple,lineWidth:1)
-            }
-            .padding()
+        }
+        .padding(.horizontal)
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
-
 }
 
 struct SearchAndFilterBar_Previews: PreviewProvider {

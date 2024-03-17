@@ -8,33 +8,37 @@
 import SwiftUI
 
 struct GroupImage: View {
-    let imageNames = ["imagen1", "imagen2", "imagen3", "imagen4", "imagen5"]
-       let captions = ["Texto 1", "Texto 2", "Texto 3", "Texto 4", "Texto 5"]
+    let imageNames = ["hamburguesa","hamburguesa","hamburguesa","hamburguesa"]
+    let captions = ["MR.BEEF","Roys Chicken","Sao Yien","Pollo Loco"]
     
-        var body: some View {
-            ScrollView(.horizontal) {
-                HStack(spacing: 20) {
-                    ForEach(imageNames.indices, id: \.self) { index in
-                        
-                        Image("hamburguesa")
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 20) {
+                ForEach(0..<imageNames.count) { index in
+                    VStack {
+                        Image(self.imageNames[index])
                             .resizable()
+                            .cornerRadius(15)
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 200, height: 200)
+                            .frame(width: 400, height: 200)
+                            
                         
-                        Text("Texto \(index)")
-                                                    .font(.headline)
-                                                    .foregroundColor(.white)
-                                                    .padding(8)
-                                                    .background(Color.black.opacity(0.5))
-                                                    .cornerRadius(10)
-                                                    .padding(.top, -30)
+                        Text(self.captions[index])
+                            .font(.headline)
+                            .foregroundColor(.gray)
+                            
+                    }
+                    if index < self.imageNames.count - 1 {
+                        Divider()
+                        
                     }
                 }
                 .padding()
             }
         }
+    }
+    
 }
-
 struct GroupImage_Previews: PreviewProvider {
     static var previews: some View {
         GroupImage()

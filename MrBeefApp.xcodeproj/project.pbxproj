@@ -22,6 +22,7 @@
 		FA7865D22BA503BB00D3F373 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7865D12BA503BB00D3F373 /* MainView.swift */; };
 		FAA743E42BA5DB5B004DEE01 /* SearchAndFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA743E32BA5DB5B004DEE01 /* SearchAndFilterBar.swift */; };
 		FAA743E62BA5E726004DEE01 /* GroupImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA743E52BA5E726004DEE01 /* GroupImage.swift */; };
+		FAA743E82BA73FD0004DEE01 /* prueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA743E72BA73FD0004DEE01 /* prueba.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		FA7865D12BA503BB00D3F373 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FAA743E32BA5DB5B004DEE01 /* SearchAndFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAndFilterBar.swift; sourceTree = "<group>"; };
 		FAA743E52BA5E726004DEE01 /* GroupImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupImage.swift; sourceTree = "<group>"; };
+		FAA743E72BA73FD0004DEE01 /* prueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				FA7865CF2BA4F75900D3F373 /* ButtonView.swift */,
 				FAA743E32BA5DB5B004DEE01 /* SearchAndFilterBar.swift */,
 				FAA743E52BA5E726004DEE01 /* GroupImage.swift */,
+				FAA743E72BA73FD0004DEE01 /* prueba.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			files = (
 				FA7865C52BA4F6ED00D3F373 /* BackgroundView.swift in Sources */,
 				FA7865C92BA4F70400D3F373 /* TextFieldView.swift in Sources */,
+				FAA743E82BA73FD0004DEE01 /* prueba.swift in Sources */,
 				FA7865D02BA4F75900D3F373 /* ButtonView.swift in Sources */,
 				FA7865CD2BA4F72300D3F373 /* ColorPalette.swift in Sources */,
 				FA7865C12BA4F6CD00D3F373 /* LoginView.swift in Sources */,
