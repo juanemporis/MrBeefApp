@@ -15,22 +15,20 @@ struct MainView: View {
             TabView {
                 ExtractedView()
                     .tabItem {
-                        Image(systemName: "1.circle")
-                        Text("First")
-                           
+                        Image(systemName: "house")
+                        Text("Inicio")
                     }
-                    
                 
                 Text("Second tab")
                     .tabItem {
-                        Image(systemName: "2.circle")
-                        Text("second")
+                        Image(systemName: "magnifyingglass")
+                        Text("Buscar")
                     }
                 
                 Text("three tab")
                     .tabItem {
-                        Image(systemName: "3.circle")
-                        Text("three")
+                        Image(systemName: "bag")
+                        Text("Pedidos")
                     }
                 
             }
@@ -53,8 +51,9 @@ struct ExtractedView: View {
             SearchAndFilterBar()
             Text("LISTA")
                 .foregroundColor(.gray)
+            Spacer()
             GroupImage()
-                .tabItem{Label("Explore", systemImage: "magnifyingglass")
+                .tabItem{ Label("Explore", systemImage: "magnifyingglass")
                     
                 }
         }

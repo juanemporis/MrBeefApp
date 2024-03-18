@@ -23,6 +23,7 @@
 		FAA743E42BA5DB5B004DEE01 /* SearchAndFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA743E32BA5DB5B004DEE01 /* SearchAndFilterBar.swift */; };
 		FAA743E62BA5E726004DEE01 /* GroupImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA743E52BA5E726004DEE01 /* GroupImage.swift */; };
 		FAA743E82BA73FD0004DEE01 /* prueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA743E72BA73FD0004DEE01 /* prueba.swift */; };
+		FAA743EC2BA7B1CA004DEE01 /* CreateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA743EB2BA7B1CA004DEE01 /* CreateProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		FAA743E32BA5DB5B004DEE01 /* SearchAndFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAndFilterBar.swift; sourceTree = "<group>"; };
 		FAA743E52BA5E726004DEE01 /* GroupImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupImage.swift; sourceTree = "<group>"; };
 		FAA743E72BA73FD0004DEE01 /* prueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba.swift; sourceTree = "<group>"; };
+		FAA743EB2BA7B1CA004DEE01 /* CreateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				FA7865C02BA4F6CD00D3F373 /* LoginView.swift */,
 				FA7865D12BA503BB00D3F373 /* MainView.swift */,
+				FAA743EB2BA7B1CA004DEE01 /* CreateProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				FA7865C32BA4F6E000D3F373 /* LogoView.swift in Sources */,
 				FA7865B32BA4F0CE00D3F373 /* ContentView.swift in Sources */,
 				FAA743E42BA5DB5B004DEE01 /* SearchAndFilterBar.swift in Sources */,
+				FAA743EC2BA7B1CA004DEE01 /* CreateProfileView.swift in Sources */,
 				FAA743E62BA5E726004DEE01 /* GroupImage.swift in Sources */,
 				FA7865D22BA503BB00D3F373 /* MainView.swift in Sources */,
 				FA7865B12BA4F0CE00D3F373 /* MrBeefAppApp.swift in Sources */,
