@@ -9,38 +9,35 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        Group {
-            Text("Nombre del Negocio")
-                .padding(.top, 1)
-            TextFieldView()
+        VStack (alignment: .leading) {
+            Group {
+                Text("Nombre del Negocio")
+                    .padding(.top, 1)
+                TextFieldView(text: .constant(""))
                 
-            Text("Email")
-                .padding(.top, 1)
-            TextFieldView()
+                Text("Email")
+                    .padding(.top, 1)
+                TextFieldView(text: .constant(""))
+                
+                Text("Nombre unico del negocio")
+                    .padding(.top, 1)
+                TextFieldView(text: .constant(""))
+                
+                Text("Numero de Contacto")
+                    .padding(.top, 1)
+                TextFieldView(text: .constant(""))
+                
+                Text("Direccion")
+                    .padding(.top, 1)
+                TextFieldView(text: .constant(""))
+            }
             
-            Text("Nombre unico del negocio")
-                .padding(.top, 1)
-            TextFieldView()
-            
-            Text("Numero de Contacto")
-                .padding(.top, 1)
-            TextFieldView()
+            Group {
+                Text("Descripcion")
+                    .padding(.top, 1)
+                TextFieldView(text: .constant(""))
+            }
         }
-        Group {
-            Text("Direccion")
-                .padding(.top, 1)
-            TextFieldView()
-            
-            Text("Descripcion")
-                .padding(.top, 1)
-            TextFieldView()
-            
-            
-        }
-            
-            
-            
-        
     }
 }
 
