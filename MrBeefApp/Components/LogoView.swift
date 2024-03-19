@@ -12,8 +12,7 @@ struct LogoView: View {
         Image("logo.mrbeef")
             .resizable()
             .aspectRatio(contentMode: ContentMode.fit)
-            .frame(height:200)
-            
+            .clipShape(Circle())
     }
 }
 

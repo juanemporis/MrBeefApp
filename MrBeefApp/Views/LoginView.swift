@@ -12,37 +12,46 @@ struct LoginView: View {
     var body: some View {
         
         ZStack {
-            Color(.black).edgesIgnoringSafeArea(.all)
             
-            VStack(alignment: .center,spacing: 15) {
+            Color.white.edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                
                 LogoView()
-                HStack {
-                    Spacer()
+                    .frame(width: 100)
+                
+                VStack(alignment: .leading) {
                     LabelView(text:"Usuario")
-                    TextFieldView(text: .constant("fetuchini"))
+                    TextFieldView(text: .constant(""))
                 }
+                .frame(width: .infinity)
+                .padding(.horizontal)
+                
+                VStack(alignment: .leading) {
+                    LabelView(text:"Contraseña")
+                    SecureFieldView(text: .constant(""))
+                }
+                .frame(width: .infinity)
+                .padding(.horizontal)
+                .padding(.top)
+                
+                ButtonView(text: "Iniciar sesion"){
+                    debugPrint("Se creo una cuenta")
+                }
+                .padding(.top)
                 
                 HStack {
+                    Text("Necesitas una cuenta?")
+                    Button {
+                        debugPrint("redireccionar a crear")
+                    } label: {
+                        LabelView(text: "Crear cuenta")
+                    }
                     Spacer()
-                    LabelView(text:"Contraseña")
-                    SecureFieldView()
                 }
-                
-                VStack{
-                    ButtonView(text: "Crear Cuenta"){
-                        debugPrint("Se creo una cuenta")
-                    }
-                }
-                .padding(15)
-                VStack{
-                    ButtonView(text: "Cancelar"){
-                        debugPrint("Se cancelo la operación")
-                    }
-                    .offset(y:-20)
-                }
-                .padding(10)
+                .padding()
+                .padding(.top)
             }
-            .padding(15)
         }
         
     }

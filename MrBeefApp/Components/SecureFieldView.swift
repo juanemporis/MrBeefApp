@@ -8,22 +8,22 @@
 import SwiftUI
 
 struct SecureFieldView: View {
-    @State var secureText: String = ""
+    
+    @Binding var text: String
     
     var body: some View {
         
-        SecureField("", text: $secureText)
-            .foregroundColor(Color.white)
-            .frame(width: 230,height: 36)
+        SecureField("", text: $text)
+            .frame(width: .infinity, height: 44)
+            .padding(.horizontal)
             .overlay(RoundedRectangle(cornerRadius: 10)
                 .stroke(Color.purple,lineWidth:1)
             )
-            .padding(.horizontal,20)
     }
 }
 
 struct SecureFieldView_Previews: PreviewProvider {
     static var previews: some View {
-        SecureFieldView()
+        SecureFieldView(text: .constant("test"))
     }
 }

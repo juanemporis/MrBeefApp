@@ -12,12 +12,13 @@ struct LabelView: View {
     
     var body: some View {
         Text(text)
-            .foregroundColor(Color.red)
+            .foregroundColor(Color.primary)
+            .font(.headline)
     }
 }
 
 struct LabelView_Previews: PreviewProvider {
     static var previews: some View {
-        LabelView(text: "HOLA")
+        LabelView(text: "label")
     }
 }
