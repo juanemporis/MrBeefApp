@@ -8,13 +8,8 @@
 import SwiftUI
 
 struct CreateProfileView: View {
-    let gradiant = Gradient(colors: [.white])
-    @State private var businessName = ""
-    @State private var email = ""
-    @State private var uniqueBusinessName = ""
-    @State private var contactNumber = ""
-    @State private var direction = ""
-    @State private var description = ""
+    let gradiant = Gradient(colors: [.red,.white])
+
     
     var body: some View {
         ScrollView{
@@ -38,33 +33,21 @@ struct CreateProfileView: View {
                             .bold()
                             .padding(.top, 5)
                         
+                        ProfileView()
                         
-                        Group {
+                        ButtonView(text: "Crear Perfil de Negocio") {
                             
-                            Text("Nombre del Negocio")
-                                .padding(.top, 1)
-                            TextFieldView(text: $businessName)
-                               
-                            Text("Email")
-                                .padding(.top, 1)
-                            TextFieldView(text: $email)
-                            
-                            Text("Nombre unico del negocio")
-                                .padding(.top, 1)
-                            TextFieldView(text: $uniqueBusinessName)
-                            
-                            Text("Numero de Contacto")
-                                .padding(.top, 1)
-                            TextFieldView(text: $contactNumber)
-                            
-                            Text("Direccion")
-                                .padding(.top, 1)
-                            TextFieldView(text: $direction)
-                            
-                            Text("Descripcion")
-                                .padding(.top, 1)
-                            TextFieldView(text: $description)
                         }
+                        LabelView(text: "Eliminar Cuenta")
+                            .bold()
+                        
+                        Text("Estas seguro que deseas eliminar el perfil de tu negocio?,recuerda que se borraran todos los datos de tu perfil")
+                        
+                        DeleteButtonView(text: "Eliminar") {
+                            
+                        }
+                            
+                        
                     }
                     }
                     

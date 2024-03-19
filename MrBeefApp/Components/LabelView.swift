@@ -12,7 +12,7 @@ struct LabelView: View {
     
     var body: some View {
         Text(text)
-            .foregroundColor(Color.white)
+            .foregroundColor(Color.red)
     }
 }
 

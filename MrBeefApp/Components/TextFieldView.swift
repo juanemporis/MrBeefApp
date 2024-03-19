@@ -13,12 +13,18 @@ struct TextFieldView: View {
     var body: some View {
         
           TextField("", text: $text)
-            .foregroundColor(Color.white)
+            .foregroundColor(Color.black)
             .frame(width: 230,height: 36)
             .overlay(RoundedRectangle(cornerRadius: 10)
             .stroke(Color.purple,lineWidth:1)
             )
             .padding(.horizontal, 20)
+            .foregroundColor(text.isEmpty ? .clear: .black)
+            .onChange(of: text) { newValue in
+                if text.isEmpty {
+                    text = "hi"
+                }
+            }
     }
 }
 
