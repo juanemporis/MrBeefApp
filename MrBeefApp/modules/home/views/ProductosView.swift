@@ -7,40 +7,35 @@
 
 import SwiftUI
 
-struct GroupImage: View {
+struct ProductosView: View {
+    
     let imageNames = ["hamburguesa","hamburguesa","hamburguesa","hamburguesa"]
     let captions = ["MR.BEEF","Roys Chicken","Sao Yien","Pollo Loco"]
     
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                ForEach(0..<imageNames.count) { index in
+                ForEach( 0..<4 ) { index in
                     VStack {
                         Image(self.imageNames[index])
                             .resizable()
-                            .cornerRadius(15)
+                            .cornerRadius(10)
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 400, height: 200)
-                            
                         
                         Text(self.captions[index])
                             .font(.headline)
                             .foregroundColor(.gray)
-                            
-                    }
-                    if index < self.imageNames.count - 1 {
-                        Divider()
-                        
                     }
                 }
-                .padding()
+                .padding(.top)
+                .padding(.horizontal)
             }
         }
     }
     
 }
-struct GroupImage_Previews: PreviewProvider {
+struct ProductosView_Previews: PreviewProvider {
     static var previews: some View {
-        GroupImage()
+        ProductosView()
     }
 }

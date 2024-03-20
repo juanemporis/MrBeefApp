@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA5FDE782BAB96CF00B6AA5B /* InicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5FDE772BAB96CF00B6AA5B /* InicioView.swift */; };
 		FA7865B12BA4F0CE00D3F373 /* MrBeefAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7865B02BA4F0CE00D3F373 /* MrBeefAppApp.swift */; };
 		FA7865B52BA4F0D000D3F373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7865B42BA4F0D000D3F373 /* Assets.xcassets */; };
 		FA7865B82BA4F0D000D3F373 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7865B72BA4F0D000D3F373 /* Preview Assets.xcassets */; };
@@ -17,14 +18,15 @@
 		FA7865CB2BA4F71500D3F373 /* SecureFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7865CA2BA4F71500D3F373 /* SecureFieldView.swift */; };
 		FA7865CD2BA4F72300D3F373 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7865CC2BA4F72300D3F373 /* ColorPalette.swift */; };
 		FA7865D02BA4F75900D3F373 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7865CF2BA4F75900D3F373 /* ButtonView.swift */; };
-		FA7865D22BA503BB00D3F373 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7865D12BA503BB00D3F373 /* HomeView.swift */; };
+		FA7865D22BA503BB00D3F373 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7865D12BA503BB00D3F373 /* MainView.swift */; };
 		FAA743E42BA5DB5B004DEE01 /* SearchAndFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA743E32BA5DB5B004DEE01 /* SearchAndFilterBar.swift */; };
-		FAA743E62BA5E726004DEE01 /* GroupImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA743E52BA5E726004DEE01 /* GroupImage.swift */; };
+		FAA743E62BA5E726004DEE01 /* ProductosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA743E52BA5E726004DEE01 /* ProductosView.swift */; };
 		FAA743EC2BA7B1CA004DEE01 /* CreateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA743EB2BA7B1CA004DEE01 /* CreateProfileView.swift */; };
 		FAA743EE2BA91C4C004DEE01 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA743ED2BA91C4B004DEE01 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA5FDE772BAB96CF00B6AA5B /* InicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioView.swift; sourceTree = "<group>"; };
 		FA7865AD2BA4F0CE00D3F373 /* MrBeefApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MrBeefApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7865B02BA4F0CE00D3F373 /* MrBeefAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrBeefAppApp.swift; sourceTree = "<group>"; };
 		FA7865B42BA4F0D000D3F373 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,9 +38,9 @@
 		FA7865CA2BA4F71500D3F373 /* SecureFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFieldView.swift; sourceTree = "<group>"; };
 		FA7865CC2BA4F72300D3F373 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		FA7865CF2BA4F75900D3F373 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		FA7865D12BA503BB00D3F373 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FA7865D12BA503BB00D3F373 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FAA743E32BA5DB5B004DEE01 /* SearchAndFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAndFilterBar.swift; sourceTree = "<group>"; };
-		FAA743E52BA5E726004DEE01 /* GroupImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupImage.swift; sourceTree = "<group>"; };
+		FAA743E52BA5E726004DEE01 /* ProductosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductosView.swift; sourceTree = "<group>"; };
 		FAA743EB2BA7B1CA004DEE01 /* CreateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileView.swift; sourceTree = "<group>"; };
 		FAA743ED2BA91C4B004DEE01 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,9 +76,9 @@
 		AA5FDE712BAB869F00B6AA5B /* views */ = {
 			isa = PBXGroup;
 			children = (
-				FA7865D12BA503BB00D3F373 /* HomeView.swift */,
+				AA5FDE772BAB96CF00B6AA5B /* InicioView.swift */,
 				FAA743E32BA5DB5B004DEE01 /* SearchAndFilterBar.swift */,
-				FAA743E52BA5E726004DEE01 /* GroupImage.swift */,
+				FAA743E52BA5E726004DEE01 /* ProductosView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -92,6 +94,7 @@
 		AA5FDE732BAB86F700B6AA5B /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				FA7865D12BA503BB00D3F373 /* MainView.swift */,
 				AA5FDE702BAB869800B6AA5B /* home */,
 				AA5FDE742BAB872500B6AA5B /* authentication */,
 				AA5FDE722BAB86AF00B6AA5B /* registration */,
@@ -249,9 +252,10 @@
 				FA7865C32BA4F6E000D3F373 /* LogoView.swift in Sources */,
 				FAA743EE2BA91C4C004DEE01 /* ProfileView.swift in Sources */,
 				FAA743E42BA5DB5B004DEE01 /* SearchAndFilterBar.swift in Sources */,
+				AA5FDE782BAB96CF00B6AA5B /* InicioView.swift in Sources */,
 				FAA743EC2BA7B1CA004DEE01 /* CreateProfileView.swift in Sources */,
-				FAA743E62BA5E726004DEE01 /* GroupImage.swift in Sources */,
-				FA7865D22BA503BB00D3F373 /* HomeView.swift in Sources */,
+				FAA743E62BA5E726004DEE01 /* ProductosView.swift in Sources */,
+				FA7865D22BA503BB00D3F373 /* MainView.swift in Sources */,
 				FA7865B12BA4F0CE00D3F373 /* MrBeefAppApp.swift in Sources */,
 				FA7865CB2BA4F71500D3F373 /* SecureFieldView.swift in Sources */,
 				FA7865C72BA4F6F800D3F373 /* LabelView.swift in Sources */,

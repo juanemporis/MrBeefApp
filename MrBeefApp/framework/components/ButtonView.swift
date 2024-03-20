@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ButtonView: View {
+    
     var text: String
     var closure: () -> Void
     
@@ -17,20 +18,22 @@ struct ButtonView: View {
         }, label: {
             Text(text)
         })
+        .frame(height: 44)
+        .padding(.horizontal)
         .foregroundColor(Color.white)
         .bold()
         .background(.purple)
-        .overlay(RoundedRectangle(cornerRadius: 10)
-            .stroke(Color.purple,lineWidth:10)
+        .overlay(
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(Color.purple,lineWidth:10)
         )
-        
     }
 }
 
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView(text: ""){
-            debugPrint("Iniciando Sesión")
+        ButtonView(text: "default text") {
+            
         }
     }
 }

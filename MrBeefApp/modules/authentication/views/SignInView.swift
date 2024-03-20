@@ -24,14 +24,12 @@ struct SignInView: View {
                     LabelView(text:"Usuario")
                     TextFieldView(text: .constant(""))
                 }
-                .frame(width: .infinity)
                 .padding(.horizontal)
                 
                 VStack(alignment: .leading) {
                     LabelView(text:"Contraseña")
                     SecureFieldView(text: .constant(""))
                 }
-                .frame(width: .infinity)
                 .padding(.horizontal)
                 .padding(.top)
                 

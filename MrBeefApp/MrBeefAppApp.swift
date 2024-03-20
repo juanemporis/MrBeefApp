@@ -11,7 +11,7 @@ import SwiftUI
 struct MrBeefAppApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            MainView()
         }
     }
 }
