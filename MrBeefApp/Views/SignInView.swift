@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LoginView: View {
+struct SignInView: View {
     
     var body: some View {
         
@@ -57,8 +57,8 @@ struct LoginView: View {
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
+struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        SignInView()
     }
 }

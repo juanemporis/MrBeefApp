@@ -19,11 +19,7 @@ struct ButtonView: View {
         })
         .foregroundColor(Color.white)
         .bold()
-        .frame(width: 350,height: 36)
         .background(.purple)
-//        .background(
-//            LinearGradient(colors: [.morado.opacity(0.6),.blanco.opacity(0.2),.morado.opacity(0.6)], startPoint: .leading, endPoint: .trailing)
-//        )
         .overlay(RoundedRectangle(cornerRadius: 10)
             .stroke(Color.purple,lineWidth:10)
         )

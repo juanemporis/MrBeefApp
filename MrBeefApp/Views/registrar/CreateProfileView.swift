@@ -25,9 +25,10 @@ struct CreateProfileView: View {
                     ProfileView()
                         .padding()
                     
-                    DeleteButtonView(text: "Eliminar") {
+                    ButtonView(text: "Eliminar") {
                         
                     }
+                    .background()
                 }
             }
             .clipped()
