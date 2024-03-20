@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct LogoView: View {
+    
+    var image: String
+    
     var body: some View {
-        Image("logo.mrbeef")
+        Image(image)
             .resizable()
             .aspectRatio(contentMode: ContentMode.fit)
             .clipShape(Circle())
@@ -19,6 +22,6 @@ struct LogoView: View {
 
 struct LogoView_Previews: PreviewProvider {
     static var previews: some View {
-        LogoView()
+        LogoView(image: "logo.mrbeef")
     }
 }

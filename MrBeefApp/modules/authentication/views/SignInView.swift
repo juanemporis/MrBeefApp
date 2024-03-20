@@ -17,7 +17,7 @@ struct SignInView: View {
             
             VStack {
                 
-                LogoView()
+                LogoView(image: "logo.mrbeef")
                     .frame(width: 100)
                 
                 VStack(alignment: .leading) {
