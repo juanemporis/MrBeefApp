@@ -8,44 +8,58 @@
 import SwiftUI
 
 struct LetterView: View {
-    let imageNames = ["hamburguesa", "hamburguesa1", "hamburguesa2", "hamburguesa3"]
     
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
-                ForEach(imageNames, id: \.self) { imageName in
-                    HStack(spacing: 10) {
-                        Image(imageName)
+            VStack(alignment: .leading) {
+                ForEach( 0...20, id: \.self) { it in
+                    HStack() {
+                        Image(getImage())
                             .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 150, height: 100)
                             .cornerRadius(10)
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 100, height: 100)
+                            .clipped()
                         
-                        VStack(alignment: .leading, spacing: 5) {
-                            Text(self.getTitle(for: imageName))
+                        VStack(alignment: .leading) {
+                            Text(getTitle())
                                 .font(.headline)
                                 .foregroundColor(.black)
                                 .bold()
-                            
                             Text("Descripción del plato")
                                 .font(.subheadline)
                                 .foregroundColor(.black)
-                            
                             HStack {
                                 Image(systemName: "bag")
                                 Text("$5 USD")
                                     .foregroundColor(.black)
                             }
                         }
+                        Spacer()
                     }
                 }
             }
-            .padding()
+            .padding(.horizontal)
+            .padding(.top)
         }
+        .clipped()
+    }
+}
+
+extension LetterView {
+    
+    func getImage() -> String {
+        
+        let number = arc4random() % 4
+        return "hamburguesa\(number)"
     }
     
-    func getTitle(for imageName: String) -> String {
-        switch imageName {
+    func getTitle() -> String {
+        
+        let number = arc4random() % 4
+        let title = "hamburguesa\(number)"
+        
+        switch title {
             case "hamburguesa":
                 return "Hamburguesa"
             case "hamburguesa1":

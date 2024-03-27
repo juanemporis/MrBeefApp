@@ -10,28 +10,27 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         
-        ZStack {
-            Color(.white).edgesIgnoringSafeArea(.all)
-            TabView {
-                InicioView()
-                    .tabItem {
-                        Image(systemName: "house")
-                        Text("Inicio")
-                    }
-                
-                Text("Historial de pedidos")
-                    .tabItem {
-                        Image(systemName: "bag")
-                        Text("Pedidos")
-                    }
-                
-                SignInView()
-                    .tabItem {
-                        Image(systemName: "person")
-                        Text("Mi Perfil")
+        NavigationView {
+            ZStack {
+                Color(.green).edgesIgnoringSafeArea(.all)
+                    TabView {
+                        InicioView()
+                            .tabItem {
+                                Image(systemName: "house")
+                                Text("Inicio")
+                            }
+                        Text("Historial de pedidos")
+                            .tabItem {
+                                Image(systemName: "bag")
+                                Text("Pedidos")
+                            }
+                        SignInView()
+                            .tabItem {
+                                Image(systemName: "person")
+                                Text("Mi Perfil")
+                            }
                     }
             }
-            
         }
     }
     

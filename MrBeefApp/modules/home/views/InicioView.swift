@@ -12,7 +12,7 @@ struct InicioView: View {
         VStack {
             SearchAndFilterBar(searchText: .constant(""))
                 .padding()
-            ProductosView()
+            StoresView()
         }
     }
 }

@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "Hamburguesa-americana-1-scaled.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Hamburguesa-americana-1-scaled.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
