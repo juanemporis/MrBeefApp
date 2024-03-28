@@ -22,7 +22,17 @@ struct CreateProfileView: View {
                     Text("Crear el Perfil de un Negocio:")
                         .bold()
                     
-                    ProfileView()
+                    ProfileView(text: "Nombre del Negocio")
+                        .padding()
+                    ProfileView(text: "Nombre unico del Negocio")
+                        .padding()
+                    ProfileView(text: "Direccion")
+                        .padding()
+                    ProfileView(text: "Email")
+                        .padding()
+                    ProfileView(text: "Numero de Contacto")
+                        .padding()
+                    ProfileView(text: "Descripcion")
                         .padding()
                     
                     

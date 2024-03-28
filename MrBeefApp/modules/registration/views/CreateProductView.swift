@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CreateProductView: View {
+    
     var body: some View {
         ZStack {
             Color.white.ignoresSafeArea(.all)
@@ -22,18 +23,13 @@ struct CreateProductView: View {
                     
                     VStack (alignment: .leading) {
 
-                            Text("Nombre del Producto")
-                                .padding(.top, 1)
-                            TextFieldView(text: .constant(""))
-                            
-                            Text("Costo")
-                                .padding(.top, 1)
-                            TextFieldView(text: .constant(""))
-                            
-                            Text("Descripcion")
-                                .padding(.top, 1)
-                            TextFieldView(text: .constant(""))
-                        
+                        ProfileView(text: "Nombre del Producto")
+                            .padding()
+                        ProfileView(text: "Descripcion")
+                            .padding()
+                        ProfileView(text: "Costo")
+                            .padding()
+                      
                         }
                     ButtonView(text: "Crear Producto de Negocio") {
                     }

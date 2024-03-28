@@ -14,7 +14,7 @@ struct TextFieldView: View {
     var body: some View {
         
         TextField("", text: $text)
-            .frame(height: 44)
+            .frame(height: 45)
             .padding(.horizontal)
             .overlay(
                 RoundedRectangle(cornerRadius: 10)
