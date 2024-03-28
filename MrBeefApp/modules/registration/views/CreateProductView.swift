@@ -1,16 +1,14 @@
 //
-//  CreateProfileView.swift
+//  CreateProductView.swift
 //  MrBeefApp
 //
-//  Created by macbook on 3/17/24.
+//  Created by macbook on 27/03/24.
 //
 
 import SwiftUI
 
-struct CreateProfileView: View {
-    
+struct CreateProductView: View {
     var body: some View {
-        
         ZStack {
             Color.white.ignoresSafeArea(.all)
             ScrollView {
@@ -19,14 +17,25 @@ struct CreateProfileView: View {
                     LogoView()
                     Text("Sube tu foto de perfil, recomendamos que tu imagen sea de 400X400px.")
                         .padding()
-                    Text("Crear el Perfil de un Negocio:")
+                    Text("Crear un Producto para tu Negocio:")
                         .bold()
                     
-                    ProfileView()
-                        .padding()
-                    
-                    
-                    ButtonView(text: "Crear Perfil de Negocio") {
+                    VStack (alignment: .leading) {
+
+                            Text("Nombre del Producto")
+                                .padding(.top, 1)
+                            TextFieldView(text: .constant(""))
+                            
+                            Text("Costo")
+                                .padding(.top, 1)
+                            TextFieldView(text: .constant(""))
+                            
+                            Text("Descripcion")
+                                .padding(.top, 1)
+                            TextFieldView(text: .constant(""))
+                        
+                        }
+                    ButtonView(text: "Crear Producto de Negocio") {
                     }
                     .padding()
                     
@@ -50,20 +59,16 @@ struct CreateProfileView: View {
                                       
                     
                     }
-                    .background()
                 }
             }
-            .clipped()
         }
     }
 }
-struct CreateProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        CreateProfileView()
-    }
-}
 
-extension CreateProfileView {
+#Preview {
+    CreateProductView()
+}
+extension CreateProductView {
     
     struct LogoView: View {
         var body: some View {
@@ -77,5 +82,3 @@ extension CreateProfileView {
         }
     }
 }
-
-
