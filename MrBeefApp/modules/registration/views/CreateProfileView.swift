@@ -25,8 +25,30 @@ struct CreateProfileView: View {
                     ProfileView()
                         .padding()
                     
-                    ButtonView(text: "Eliminar") {
+                    
+                    ButtonView(text: "Crear Perfil de Negocio") {
+                    }
+                    .padding()
+                    
+                    Rectangle()
+                      .fill(Color.black)
+                      .frame(height: 1)
+                    
+                    VStack(alignment: .leading,spacing: 15) {
+                  
+                        Text("Eliminar Cuenta")
+                             .foregroundColor(.red)
+                             .bold()
+                             
                         
+                         Text("Estas seguro que deseas eliminar el perfil de tu negocio? , recuerda que se borraran todos los datos de tu perfil.")
+                            
+                         
+                         DeleteButtonView(text:"Delete") {
+                             
+                         }
+                                      
+                    
                     }
                     .background()
                 }

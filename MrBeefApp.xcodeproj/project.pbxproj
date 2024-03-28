@@ -21,6 +21,7 @@
 		FA7865D22BA503BB00D3F373 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7865D12BA503BB00D3F373 /* MainView.swift */; };
 		FA79F3992BB3909200B25D13 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA79F3982BB3909200B25D13 /* StoreView.swift */; };
 		FA79F39B2BB3977300B25D13 /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA79F39A2BB3977300B25D13 /* LetterView.swift */; };
+		FA8D91C42BB50E8C004CDE88 /* DeleteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D91C32BB50E8C004CDE88 /* DeleteButtonView.swift */; };
 		FAA743E42BA5DB5B004DEE01 /* SearchAndFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA743E32BA5DB5B004DEE01 /* SearchAndFilterBar.swift */; };
 		FAA743E62BA5E726004DEE01 /* StoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA743E52BA5E726004DEE01 /* StoresView.swift */; };
 		FAA743EC2BA7B1CA004DEE01 /* CreateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA743EB2BA7B1CA004DEE01 /* CreateProfileView.swift */; };
@@ -43,6 +44,7 @@
 		FA7865D12BA503BB00D3F373 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FA79F3982BB3909200B25D13 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 		FA79F39A2BB3977300B25D13 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
+		FA8D91C32BB50E8C004CDE88 /* DeleteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButtonView.swift; sourceTree = "<group>"; };
 		FAA743E32BA5DB5B004DEE01 /* SearchAndFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAndFilterBar.swift; sourceTree = "<group>"; };
 		FAA743E52BA5E726004DEE01 /* StoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresView.swift; sourceTree = "<group>"; };
 		FAA743EB2BA7B1CA004DEE01 /* CreateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileView.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				FA7865C82BA4F70400D3F373 /* TextFieldView.swift */,
 				FA7865CA2BA4F71500D3F373 /* SecureFieldView.swift */,
 				FA7865CF2BA4F75900D3F373 /* ButtonView.swift */,
+				FA8D91C32BB50E8C004CDE88 /* DeleteButtonView.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				FAA743E62BA5E726004DEE01 /* StoresView.swift in Sources */,
 				FA7865D22BA503BB00D3F373 /* MainView.swift in Sources */,
 				FA7865B12BA4F0CE00D3F373 /* MrBeefAppApp.swift in Sources */,
+				FA8D91C42BB50E8C004CDE88 /* DeleteButtonView.swift in Sources */,
 				FA7865CB2BA4F71500D3F373 /* SecureFieldView.swift in Sources */,
 				FA7865C72BA4F6F800D3F373 /* LabelView.swift in Sources */,
 			);
